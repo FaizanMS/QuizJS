@@ -26,7 +26,7 @@ body{
 .stopwatch-body-class{
     height: 100px;
     width: 300px;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     border-radius: 25px;
     text-align: center;
@@ -85,7 +85,7 @@ body{
 }
 
 #questionss{
-    background-color: palevioletred;
+    background-color: #0040ff;
     color: white;
     width: 800px;
     height: 100px;
@@ -101,8 +101,8 @@ body{
 
 .options{
 
-    background-color: lightsalmon;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     width: 500px;
     height: 100px;
     border-radius: 25px;
@@ -170,6 +170,8 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
     color: #ffffff;
     padding-left: 10px;
+    border: 1px solid #ffffff;
+
 
 }
 
@@ -181,6 +183,7 @@ body{
     background-color: rgba(0, 0, 0, 0.001);
     color: white;
     border-radius: 5px;
+    border: 1px solid #ffffff;
 
 }
 
@@ -201,4 +204,16 @@ body{
 
 .signup a:hover{
     text-decoration: underline;
+}
+
+.results{
+
+    text-align: center;
+    font-size: 30px;
+    width: auto !important;
+    height: auto !important;
+    padding: 15px;
+    color: #ffffff;
+    font-weight: bold;
+
 }

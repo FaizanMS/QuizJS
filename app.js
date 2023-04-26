@@ -144,10 +144,26 @@ function reset(){
 function endquiz(){
 
     var finalscore = (score*100)/quizLength
+    var grade;
+    if(finalscore>=80){
+        grade = "Excelent"
+    }
+    else if(finalscore>=70){
+        grade = "Very Good Score"
+    }
+    else if(finalscore>=50){
+        grade = "Good Score"
+    }
+    else if(finalscore<50){
+        grade = "Fail"
+    }
+
+    var useremailname = localStorage.getItem('email')
     var result =  document.getElementById('QuestionAndOptions')
         document.getElementById('stopwatch-body').innerHTML = " ";
         document.getElementById('stopwatch-body').remove();
-        result.innerHTML = "Your Result: " + finalscore + "%";
+        result.innerHTML ="Student ID: " + useremailname + "<br>Your Result: " + grade + "<br>Your Score: " + finalscore + "%";
+        result.className += " results"
     
 
 }
@@ -211,7 +227,7 @@ startTimer();
 setInterval(function(){
 
 
-    if($min == 20){
+    if($min == 1){
 
         endquiz()
 
